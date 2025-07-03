@@ -35,6 +35,11 @@ const UploadFaces = () => {
       />
 
       <Button
+        title="Use Camera"
+        onPress={() => router.navigate("/(pages)/cameraCapture")}
+      />
+
+      <Button
         title="Pick Face Image"
         onPress={pickImage}
         disabled={images.length >= 6}
